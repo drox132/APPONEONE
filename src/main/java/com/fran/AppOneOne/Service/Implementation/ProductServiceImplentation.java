@@ -23,4 +23,25 @@ public class ProductServiceImplentation implements ProductService {
         return productRepository.selectAllProduct();
 
     }
+
+    @Override
+    public void insertProduct(Product nuevoProduct) {
+        productRepository.insertProduct(nuevoProduct.getName(), nuevoProduct.getPrice(),nuevoProduct.getQuantity());
+    }
+
+    @Override
+    public Product selectProductById(int id) {
+        return productRepository.selectProductById(id);
+    }
+
+    @Override
+    public void deleteProductById(int id ) {
+         productRepository.deleteProductById(id);
+
+    }
+
+    @Override
+    public void updateProductByid(Product updateProduct) {
+        productRepository.updateProductById(updateProduct.getId(),updateProduct.getName(),updateProduct.getPrice(),updateProduct.getQuantity());
+    }
 }

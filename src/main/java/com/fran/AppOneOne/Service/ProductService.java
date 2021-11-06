@@ -7,4 +7,15 @@ import java.util.List;
 public interface ProductService {
 
     List<Product> selectAllProduct();
+
+    void insertProduct (Product nuevoProduct);
+
+    Product selectProductById(int id);
+
+    void deleteProductById (int id);
+
+    void updateProductByid(Product updateProduct);
+
+
+
 }
