@@ -29,12 +29,7 @@ public interface ProductRepository extends JpaRepository <Product, Integer> {
     @Query (value= "DELETE FROM PRODUCT WHERE ID = :idusuario ", nativeQuery = true)
     void deleteProductById(@Param("idusuario") int id);
 
-    //tienes que quitar ese / del UPDATE y sabes que tambien le cambie el lugar de esto
-    //lo puse de primero influte?
 
-    // a que haces referenccia? apunta con el mouse m, el orden de la query
-    //no, si la query está bien no pasa nada
-    //ya debe funcionar
 
     @Query (value="UPDATE product SET name= :nameusuario , price = :priceusuario, quantity= :quantityusuario WHERE id = :idusuario ", nativeQuery = true)
     void updateProductById(@Param("idusuario") int id, @Param("nameusuario") String name, @Param("priceusuario") int price, @Param("quantityusuario") int quantity );
