@@ -46,14 +46,3 @@ public interface ProductRepository extends JpaRepository <Product, Integer> {
 
 
 
-
-
-//no puedo ayudarte si no me dices que quieres que te ayude
-// no se como hacer la query para insert product debo clocarle los dos puntos y creo que va sin el @
-//correcto
-// y en el arumento lo hao asi @Param("nameVariable") String name, @Param("priceVariable") int price
-//me lo preguntas o me lo dices? te lopregunto
-//si mmm entonces lo voy a hacer pero no me dejes solo que me da miedo <- 💩💩💩💩 jajajja puedes seguir si dale cualquier cosa
-//te escribo si, recuerda revisar lo que ya hiciste en proyectos anteriores y si no entiendes me escribes ok
-//no
-//esta mal?
