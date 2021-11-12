@@ -1,9 +1,11 @@
 package com.fran.AppOneOne.Model;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
 
 @Entity
 public class Shopping {
+    @Id
     private int id;
     private String name;
     private String address;
@@ -20,7 +22,7 @@ public class Shopping {
         this.address=address;
     }
 
-    public int getId(int id){
+    public int getId(){
         return id;
     }
     public void setId(int id){
